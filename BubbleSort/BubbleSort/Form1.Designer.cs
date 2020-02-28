@@ -33,11 +33,11 @@
 			this.lblcmp = new System.Windows.Forms.Label();
 			this.lblswp = new System.Windows.Forms.Label();
 			this.groupBox1 = new System.Windows.Forms.GroupBox();
-			this.label1 = new System.Windows.Forms.Label();
-			this.label2 = new System.Windows.Forms.Label();
-			this.tblength = new System.Windows.Forms.TextBox();
-			this.tbmax = new System.Windows.Forms.TextBox();
 			this.btnrandom = new System.Windows.Forms.Button();
+			this.tbmax = new System.Windows.Forms.TextBox();
+			this.tblength = new System.Windows.Forms.TextBox();
+			this.label2 = new System.Windows.Forms.Label();
+			this.label1 = new System.Windows.Forms.Label();
 			this.groupBox1.SuspendLayout();
 			this.SuspendLayout();
 			// 
@@ -90,14 +90,29 @@
 			this.groupBox1.TabStop = false;
 			this.groupBox1.Text = "New Random Array";
 			// 
-			// label1
+			// btnrandom
 			// 
-			this.label1.AutoSize = true;
-			this.label1.Location = new System.Drawing.Point(62, 25);
-			this.label1.Name = "label1";
-			this.label1.Size = new System.Drawing.Size(43, 13);
-			this.label1.TabIndex = 0;
-			this.label1.Text = "Length:";
+			this.btnrandom.Location = new System.Drawing.Point(9, 84);
+			this.btnrandom.Name = "btnrandom";
+			this.btnrandom.Size = new System.Drawing.Size(265, 23);
+			this.btnrandom.TabIndex = 4;
+			this.btnrandom.Text = "Create and Sort";
+			this.btnrandom.UseVisualStyleBackColor = true;
+			this.btnrandom.Click += new System.EventHandler(this.btnrandom_Click);
+			// 
+			// tbmax
+			// 
+			this.tbmax.Location = new System.Drawing.Point(111, 48);
+			this.tbmax.Name = "tbmax";
+			this.tbmax.Size = new System.Drawing.Size(163, 20);
+			this.tbmax.TabIndex = 3;
+			// 
+			// tblength
+			// 
+			this.tblength.Location = new System.Drawing.Point(111, 22);
+			this.tblength.Name = "tblength";
+			this.tblength.Size = new System.Drawing.Size(163, 20);
+			this.tblength.TabIndex = 2;
 			// 
 			// label2
 			// 
@@ -108,29 +123,14 @@
 			this.label2.TabIndex = 1;
 			this.label2.Text = "Numbers Maximum:";
 			// 
-			// tblength
+			// label1
 			// 
-			this.tblength.Location = new System.Drawing.Point(111, 22);
-			this.tblength.Name = "tblength";
-			this.tblength.Size = new System.Drawing.Size(163, 20);
-			this.tblength.TabIndex = 2;
-			// 
-			// tbmax
-			// 
-			this.tbmax.Location = new System.Drawing.Point(111, 48);
-			this.tbmax.Name = "tbmax";
-			this.tbmax.Size = new System.Drawing.Size(163, 20);
-			this.tbmax.TabIndex = 3;
-			// 
-			// btnrandom
-			// 
-			this.btnrandom.Location = new System.Drawing.Point(9, 84);
-			this.btnrandom.Name = "btnrandom";
-			this.btnrandom.Size = new System.Drawing.Size(265, 23);
-			this.btnrandom.TabIndex = 4;
-			this.btnrandom.Text = "Create and Sort";
-			this.btnrandom.UseVisualStyleBackColor = true;
-			this.btnrandom.Click += new System.EventHandler(this.btnrandom_Click);
+			this.label1.AutoSize = true;
+			this.label1.Location = new System.Drawing.Point(62, 25);
+			this.label1.Name = "label1";
+			this.label1.Size = new System.Drawing.Size(43, 13);
+			this.label1.TabIndex = 0;
+			this.label1.Text = "Length:";
 			// 
 			// Form1
 			// 
@@ -142,6 +142,8 @@
 			this.Controls.Add(this.lblcmp);
 			this.Controls.Add(this.lbllength);
 			this.Controls.Add(this.listBox1);
+			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.MaximizeBox = false;
 			this.Name = "Form1";
 			this.Text = "Bubble Sort";
 			this.Load += new System.EventHandler(this.Form1_Load);
